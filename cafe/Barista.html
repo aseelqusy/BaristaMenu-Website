@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title > Barista Menu </title>
+   
+    <img src="image/example.jpg" alt hidden>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Menu</title>
+    <link rel="stylesheet" href="Styless.css">
+    <script src="New.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>BARISTA MENU</h1>
+    </header>
+    <main>
+          
+          <section class="menu-section hot-drinks-section ">
+             <button class="menu-button"onclick="toggleSection(this)"><h2>Hot Drinks</h2></button>
+             <table id="hot-drinks-table">
+                <thead>
+                    <tr><th></th><th>S</th><th>L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Espresso</td><td>4</td><td>6</td></tr>
+                    <tr><td>Americano</td><td>8</td><td>10</td></tr>
+                    <tr><td>Tea / Mix Tea</td> <td colspan="2">6</td>
+                    <tr><td>Latte</td><td>8</td><td>10</td></tr>
+                    <tr><td>Mocha</td><td>9</td><td>10</td></tr>
+                    <tr><td>Cappuccino</td><td>8</td><td>10</td></tr>
+                    <tr><td>French Vanilla</td><td>8</td><td>10</td></tr>
+                    <tr><td>French Hazelnut</td><td>8</td><td>10</td></tr>
+                    <tr><td>Salted Caramel</td><td>8</td><td>10</td></tr>
+                    <tr><td>Nutella</td><td>8</td><td>10</td></tr>
+                    <tr><td>Hot Chocolate</td><td>8</td><td>10</td></tr>
+                    <tr><td>Spanish Latte</td><td>8</td><td>10</td></tr>
+                    <tr><td>Chai Latte</td><td>8</td><td>10</td></tr>
+                    <tr><td>Mocha Hazelnut Latte</td><td>-</td><td>14</td></tr>
+                    <tr><td>Sahlab</td> <td colspan="2">12</td>
+                    <tr><td>Chocolate Pudding</td> <td colspan="2">12</td>
+                </tbody>
+            </table>
+            <p>Note: With ice, Espresso or milk add 2 NIS</p>
+            <p> عند اضافة قهوة او بوظة او  حليب يتم اضافة 2 شيكل على الطلب</p>
+        </section>
+
+
+
+<section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Iced drinks</h2></button>
+            <table id="iced"style="background-image: url('image/iced.jpg'); background-size: cover; background-position: center;">
+                <thead">
+                    <tr><th></th><th>S</th><th>L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Iced Tea</td><td>8</td><td>10</td></tr>
+                    <tr><td>Iced Coffee</td><td>8</td><td>10</td></tr>
+                    <tr><td>Iced Passion Fruit</td><td>8</td><td>10</td></tr>
+                    <tr><td>Iced Vanilla</td><td>8</td><td>10</td></tr>
+                    <tr><td>Iced Vanilla Latte</td><td>12</td><td>14</td></tr>
+                    <tr><td>Iced Caramel Latte</td><td>12</td><td>14</td></tr>
+                    <tr><td>Iced Spanish Latte</td><td>12</td><td>14</td></tr>
+                    <tr><td>Italian Drinks (Mohito)</td><td>10</td><td>12</td></tr>
+                    <tr><td>Iced Hazelnut Latte</td><td>12</td><td>14</td></tr>
+                    <tr><td>Ice American</td><td>10</td><td>12</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+
+
+
+
+        
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Smoothies</h2></button>
+            <table id="Smoothies"style="background-image: url('image/smoothy.jpg'); background-size: cover; background-position: center;">
+                <thead>
+                    <tr><th>  </th><th>S</th><th>L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Mango</td><td>12</td><td>14</td></tr>
+                    <tr><td>Pineapple</td><td>12</td><td>14</td></tr>
+                    <tr><td>Passionfruit</td><td>12</td><td>14</td></tr>
+                    <tr><td>Strawberry</td><td>12</td><td>14</td></tr>
+                    <tr><td>Mixed Berry</td><td>12</td><td>14</td></tr>
+                    <tr><td>Tropicana Barista</td><td>12</td><td>14</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Milkshake</h2></button>
+            <table id="milk"style="background-image: url('image/milk.jpg'); background-size: cover; background-position: center;">
+                <thead>
+                    <tr><th></th><th>S</th><th>L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Nutella</td><td>12</td><td>14</td></tr>
+                    <tr><td>Lotus</td><td>12</td><td>14</td></tr>
+                    <tr><td>Vanilla</td><td>12</td><td>14</td></tr>
+                    <tr><td>Red Berry</td><td>12</td><td>14</td></tr>
+                    <tr><td>Blueberry Cheesecake</td><td>12</td><td>14</td></tr>
+                    <tr><td>Pistachio</td><td>12</td><td>14</td></tr>
+                    <tr><td>Cheesecake</td><td>12</td><td>14</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Barista cake</h2></button>
+            <table id="cake"style="background-image: url('image/cake.jpg'); background-size: cover; background-position: center;">
+                <thead>
+                    <tr><th>  </th><th></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Blueberry Cheesecake</td><td>15</td></tr>
+                    <tr><td>Lazy Cake</td><td>15</td></tr>
+                    <tr><td>Chocolate Cake</td><td>15</td></tr>
+                    <tr><td>Soufflé</td><td>15</td></tr>
+                    <tr><td>Red Velvet</td><td>15</td></tr>
+                    <tr><td>Brownies</td><td>15</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Mini desert</h2></button>
+            <table id="mini"style="background-image: url('image/mini.jpg'); background-size: cover; background-position: center;">
+                <thead>
+                    <tr><th>  </th><th></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Donuts</td><td>6</td></tr>
+                    <tr><td>Croissant</td><td>3</td></tr>
+                    <tr><td>Cookies</td><td>4</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Fresh juices</h2></button>
+            <table id="fresh-juice-table" style="background-image: url('image/fresh.jpg'); background-size: cover; background-position: center;">
+
+                <thead>
+                    <tr><th></th><th>S</th><th>L</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Orange</td><td>8</td><td>10</td></tr>
+                    <tr><td>Lemon Mint</td><td>8</td><td>10</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="menu-section">
+            <button class="menu-button"onclick="toggleSection(this)"><h2>Cold drinks</h2></button>
+            <table id="cold"style="background-image: url('image/cold.jpg'); background-size: cover; background-position: center;">
+                <thead >
+                    <tr><th>  </th><th></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>XL</td><td>6</td></tr>
+                    <tr><td>Soda</td><td>6</td></tr>
+                    <tr><td>Sprite</td><td>6</td></tr>
+                    <tr><td>Water</td><td>3</td></tr>
+                </tbody>
+            </table>
+            <p>Note: With ice, add 2 NIS</p>
+        </section>
+    </main>
+</body>
+</html>

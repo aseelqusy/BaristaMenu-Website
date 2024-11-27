@@ -1,0 +1,225 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #110f0f;
+    border-bottom: 2px solid #ddd;
+    
+}
+ h1{
+    color: white;
+    font-family:poppins;
+    font-size:xx-large;
+ }
+.menu-button {
+    display: inline-block;
+    background-color: #141517; /* Blue color */
+    color: rgb(18, 16, 16);
+    border: 2px solid #030910;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .menu-button:hover {
+    background-color: rgb(127, 123, 123);
+    color: #111213;
+  }
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#030910;
+    background-image: url('image/main.jpg');
+    
+}
+
+.menu-section {
+    cursor: pointer;
+    display: block;
+    background: #121111;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    
+    height: fit-content;
+}
+
+.menu-section h2 {
+    font-family: poppins;
+    font-size: 1.2rem;
+    color: #fffbfb;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: poppins;
+    color: #f2f2f2;
+}
+
+table th {
+ 
+    color: #33333354;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: left;
+}
+
+
+/* Hide sections by default */
+.hidden {
+  display: none;
+}
+
+.menu-section table,
+.menu-section p {
+    display: none;
+    opacity: 0;
+  transform: scale(0.9) translateY(-30px); /* Start slightly smaller and above */
+  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bounce easing */
+}
+
+.menu-section.open table,
+.menu-section.open p {
+    display: table;
+    margin-top: 10px; /* Optional for spacing */
+    
+}
+
+
+
+.menu-section.open table,
+.menu-section.open p {
+    opacity: 1;
+    transform: translateY(0); /* Bring back to its position */
+    pointer-events: auto; /* Enable interaction */
+  }
+  
+
+
+  .menu-section.open table {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Bright glow effect */
+  }
+
+
+  .menu-section.open table {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotateX(0); /* Restore to normal */
+  }
+
+
+
+
+
+
+
+#hot-drinks-table {
+    background-image: url('image/hot.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the image cover the entire table */
+    background-position: center; /* Center the image */
+    border-collapse: collapse; /* Ensure proper table styling */
+    width: 100%; /* Ensure the table takes full width */
+}
+
+#hot-drinks-table th,
+#hot-drinks-table td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+
+#fresh-juice-table th,
+#fresh-juice-table td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+
+#iced th,
+#iced td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+
+#Smoothies th,
+#Smoothies td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+#milk th,
+#milk td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+#cake th,
+#cake td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+#mini th,
+#mini td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
+#cold th,
+#cold td {
+    background-color: rgba(21, 20, 20, 0.788); /* Add a semi-transparent white background to make text readable */
+    color: #fcf8f8; /* Text color */
+    padding: 10px; /* Cell padding */
+    text-align: center; /* Center-align text */
+}
+
